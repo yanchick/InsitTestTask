@@ -1,8 +1,6 @@
 name: Release TBB binaries
 
-on:
-  release:
-    types: [created]
+on: [push, pull_request]
 
 jobs:
   releases-matrix:

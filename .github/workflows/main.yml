@@ -22,4 +22,6 @@ jobs:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
           goversion: "https://dl.google.com/go/go1.15.1.linux-amd64.tar.gz"
+          binary_name: frontendtest
+          asset_name: frontendtest- ${{ matrix.goos }}-${{ matrix.goarch }}
           extra_files: README.md

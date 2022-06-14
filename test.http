@@ -1,0 +1,27 @@
+POST http://127.0.0.1:1080/login
+Content-Type: application/json
+
+{"username":"yan"}
+
+###
+POST http://127.0.0.1:1080/task
+Content-Type: application/json
+Set-Cookie: cookie-name=MTY1NTIyMTc5M3xEdi1CQkFFQ180SUFBUkFCRUFBQVJ2LUNBQUlHYzNSeWFXNW5EQThBRFdGMWRHaGxiblJwWTJGMFpXUUVZbTl2YkFJQ0FBRUdjM1J5YVc1bkRBb0FDSFZ6WlhKdVlXMWxCbk4wY21sdVp3d0ZBQU41WVc0PXzRcdfyZKueQz-PIpISqgTtJRjRcVgT11XUu4qDHMIxag==
+
+{"description":"yan1","state": "done"}
+
+
+###
+
+PUT http://127.0.0.1:1080/task
+Content-Type: application/json
+Set-Cookie: cookie-name=MTY1NTIyMTQ2N3xEdi1CQkFFQ180SUFBUkFCRUFBQVJ2LUNBQUlHYzNSeWFXNW5EQW9BQ0hWelpYSnVZVzFsQm5OMGNtbHVad3dGQUFONVlXNEdjM1J5YVc1bkRBOEFEV0YxZEdobGJuUnBZMkYwWldRRVltOXZiQUlDQUFFPXxYeTIwGJ6lHgJCr60QRwnYGIFKmMCpJ8TunhhVpe85_Q==;
+
+[{"description":"yan1","state": "open"},{"description":"yan2","state": "open"}]
+
+###
+
+GET http://127.0.0.1:1080/task
+Content-Type: application/json
+Set-Cookie: cookie-name=MTY1NTIyMTQ2N3xEdi1CQkFFQ180SUFBUkFCRUFBQVJ2LUNBQUlHYzNSeWFXNW5EQW9BQ0hWelpYSnVZVzFsQm5OMGNtbHVad3dGQUFONVlXNEdjM1J5YVc1bkRBOEFEV0YxZEdobGJuUnBZMkYwWldRRVltOXZiQUlDQUFFPXxYeTIwGJ6lHgJCr60QRwnYGIFKmMCpJ8TunhhVpe85_Q==;
+

@@ -1,15 +1,15 @@
 package model
 
-import "time"
-
 type Auth struct {
-	Login    string `json:"login"`
-	Password string `json:"password"`
+	Login string `json:"username"`
 }
 
 type Task struct {
-	Login       string    `json:"login"`
-	Description string    `json:"description"`
-	Created     time.Time `json:"created"`
-	Status      string    `json:"status"`
+	Description string `json:"description"`
+	State       string `json:"state"`
+}
+
+type Response struct {
+	Status string `json:"status"`
+	Data   []Task `json:"data"`
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"InsitTestTask/app"
+	"github.com/yanchick/InsitFrontendTest/app"
 	"github.com/tidwall/buntdb"
 	"net/http"
 )

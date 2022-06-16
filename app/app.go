@@ -1,7 +1,7 @@
 package app
 
 import (
-	"InsitTestTask/model"
+	"github.com/yanchick/InsitFrontendTest/model"
 	"encoding/json"
 	"fmt"
 	"github.com/gomarkdown/markdown"

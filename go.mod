@@ -1,4 +1,4 @@
-module InsitTestTask
+module github.com/yanchick/InsitFrontendTest
 
 go 1.15
 

@@ -1,12 +1,12 @@
 package app
 
 import (
-	"github.com/yanchick/InsitFrontendTest/model"
 	"encoding/json"
 	"fmt"
 	"github.com/gomarkdown/markdown"
 	"github.com/gorilla/sessions"
 	"github.com/tidwall/buntdb"
+	"github.com/yanchick/InsitFrontendTest/model"
 	"io"
 	"io/ioutil"
 	"log"
@@ -48,7 +48,7 @@ func Login(db *buntdb.DB) http.HandlerFunc {
 func Task(db *buntdb.DB) http.HandlerFunc {
 	//var tasks []model.Task
 	fn := func(w http.ResponseWriter, r *http.Request) {
-		session, _ := store.Get(r, "cookie-name")
+		session, _ := store.Get(r, "insit")
 		var isAuth = !session.IsNew
 
 		if isAuth {

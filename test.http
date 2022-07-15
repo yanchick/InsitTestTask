@@ -2,6 +2,7 @@
 #Login to server
 POST http://127.0.0.1:1080/login
 Content-Type: application/json
+Origin: http://foo.com'
 
 {"username":"yan"}
 
@@ -10,7 +11,7 @@ Content-Type: application/json
 
 POST http://127.0.0.1:1080/task
 Content-Type: application/json
-Set-Cookie: cookie-name=MTY1NTIyMTc5M3xEdi1CQkFFQ180SUFBUkFCRUFBQVJ2LUNBQUlHYzNSeWFXNW5EQThBRFdGMWRHaGxiblJwWTJGMFpXUUVZbTl2YkFJQ0FBRUdjM1J5YVc1bkRBb0FDSFZ6WlhKdVlXMWxCbk4wY21sdVp3d0ZBQU41WVc0PXzRcdfyZKueQz-PIpISqgTtJRjRcVgT11XUu4qDHMIxag==
+Set-Cookie: insit=MTY1NzkwODE3NXxEdi1CQkFFQ180SUFBUkFCRUFBQVJ2LUNBQUlHYzNSeWFXNW5EQThBRFdGMWRHaGxiblJwWTJGMFpXUUVZbTl2YkFJQ0FBRUdjM1J5YVc1bkRBb0FDSFZ6WlhKdVlXMWxCbk4wY21sdVp3d0ZBQU41WVc0PXxau4oFbFuKFFSEk7NyDh2COpc0YmyqB1WkuNMXlEWmNQ==
 
 {"description":"yan1","status": "done"}
 

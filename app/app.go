@@ -41,7 +41,11 @@ func Login(db *buntdb.DB) http.HandlerFunc {
 			bolB, _ := json.Marshal(true)
 			fmt.Fprintf(w, string(bolB))
 		}
+		if r.Method == "OPTIONS" {
+			fmt.Fprintf(w, "")
+		}
 	}
+
 	return http.HandlerFunc(fn)
 }
 
@@ -97,6 +101,9 @@ func Task(db *buntdb.DB) http.HandlerFunc {
 				if err != nil {
 					log.Fatal(err)
 				}
+
+			case "OPTIONS":
+				fmt.Fprintf(w, "")
 
 			case "PUT":
 				err := db.Update(func(tx *buntdb.Tx) error {

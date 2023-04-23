@@ -68,7 +68,7 @@ func Task(db *buntdb.DB) http.HandlerFunc {
 					fmt.Fprintf(w, val)
 					return nil
 				})
-			case "POST":
+			case "PUT":
 				var tasks []model.Task
 				var task model.Task
 				bodyBytes, err := ioutil.ReadAll(r.Body)
@@ -105,7 +105,7 @@ func Task(db *buntdb.DB) http.HandlerFunc {
 			case "OPTIONS":
 				fmt.Fprintf(w, "")
 
-			case "PUT":
+			case "POST":
 				err := db.Update(func(tx *buntdb.Tx) error {
 
 					bodyBytes, err := ioutil.ReadAll(r.Body)
